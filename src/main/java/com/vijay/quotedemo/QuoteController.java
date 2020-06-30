@@ -41,6 +41,13 @@ public class QuoteController {
 				"  \"timestamp\" : 1593424230\r\n" + 
 				"} ]";
 	}
+	
+	@GetMapping("/version")
+	//public Company company(@RequestParam(value = "companyName", defaultValue = "AAPL") String name) {
+	public String version() {
+	//return new Company("AAPL",10);
+		return "App Version : 0.2";
+	}
 }
 
 
